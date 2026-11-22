@@ -1,23 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-
-// The home route ships no og:image, so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { SpotSite } from '@/components/spot-site';
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({ meta: [
+    { title: 'HALID SPOT TRADING | Kripto analize i Spot VIP zajednica' },
+    { name: 'description', content: 'Spot analize, altcoin istraživanje i kripto edukacija sa Halidom Arzićem. Bez leveragea i futuresa. Spot VIP Club: $59 za 3 mjeseca.' },
+    { property: 'og:title', content: 'HALID SPOT TRADING — Kripto tržište bez leveragea' },
+    { property: 'og:description', content: 'Istraživanje prije odluke. Spot analize, edukacija i odgovoran pristup kripto tržištu za zajednicu sa Balkana.' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+  ] }),
+  component: SpotSite,
 });
-
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}

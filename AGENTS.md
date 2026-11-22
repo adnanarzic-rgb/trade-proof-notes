@@ -28,3 +28,9 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project architecture
+- Keep the explicitly requested long-form website at `/` with section anchors; this preserves the brief's single-page navigation.
+- Store membership, social destinations and owner evidence in a browser-safe configuration module; missing destinations must not redirect to invented services.
+- Keep all presentation tokens and reusable section styling in `src/styles.css`; components use semantic classes.
+- Evidence entries distinguish source availability and performance type; never render unsupplied screenshot claims as verified results.
