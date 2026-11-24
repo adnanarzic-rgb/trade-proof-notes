@@ -55,7 +55,7 @@ export function SpotSite() {
 </p>
 
 
-        <p className="intro-summary">Uz praktične video lekcije, analize i primjere trgovanja nauči osnove spot ulaganja — korak po korak.</p>
+        
         <div className="intro-checks"><span><Check/>Bez leveragea</span><span><Check/>Jednostavna objašnjenja</span><span><Check/>Za ljude sa Balkana</span></div>
         <JoinButton/><p className="small-note">Odaberi paket i pridruži se edukaciji i zajednici.</p>
       </section>
