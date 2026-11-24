@@ -22,7 +22,7 @@
 .brand { display: inline-flex; align-items: center; gap: 10px; font-size: 21px; font-weight: 800; flex-shrink: 0; line-height: 1.05; }.brand>svg { color: var(--primary); width: 29px; height: 29px; }.brand span span { display: block; font-size: 9px; margin-top: 5px; font-weight: 700; color: var(--muted-foreground); }
 .desktop-nav,.footer-nav { display: flex; gap: 25px; font-size: 12px; font-weight: 600; color: var(--muted-foreground); }.desktop-nav a:hover,.footer-nav a:hover { color: var(--primary); }.header-cta { font-size: 12px; }.mobile-toggle,.mobile-nav { display: none; }
 .eyebrow { display: block; font-size: 10px; color: var(--primary); font-weight: 800; margin-bottom: 17px; }.intro { text-align: center; padding: 54px 0 45px; max-width: 900px; }.intro h1 { font-size: 44px; line-height: 1.28; }.underlined { position: relative; display: inline; text-decoration: underline; text-decoration-color: var(--underline); text-decoration-thickness: 4px; text-underline-offset: 9px; }.intro-subtitle { font-size: 17px; margin: 24px auto 28px; }.mobile-break { display: none; }
-.vsl-frame { aspect-ratio: 16/9; width: 100%; max-width: 740px; margin-inline: auto; overflow: hidden; border: 1px solid var(--border); border-radius: 8px; background: var(--video-background); }.vsl-frame video { width: 100%; height: 100%; background: var(--foreground); }.video-pending { height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 17px; color: var(--muted-foreground); font-size: 12px; }.play-symbol { width: 62px; height: 62px; display: grid; place-items: center; border: 1px solid var(--video-icon); border-radius: 50%; background: var(--background); color: var(--primary); }.play-symbol svg { width: 22px; margin-left: 3px; }.intro-summary { max-width: 650px; font-size: 14px; margin: 23px auto 12px; }.intro-checks { display: flex; gap: 25px; justify-content: center; margin-bottom: 24px; font-size: 11px; font-weight: 650; }.intro-checks span { display: flex; align-items: center; gap: 5px; }.intro-checks svg { width: 15px; color: var(--primary); }.intro>a,.final-cta>a { min-height: 48px; min-width: 290px; font-size: 13px; }.small-note { font-size: 11px; margin-top: 12px; }.section { padding-block: 70px; }.section-heading { margin-bottom: 32px; }.section-heading h2 { font-size: 31px; line-height: 1.3; }.section-heading p { margin-top: 14px; font-size: 14px; }.section-band { background: var(--secondary); border-block: 1px solid var(--border); }
+ border-radius: 8px; background: var(--video-background); }.vsl-frame iframe o { width: 100%; height: 100%; background: var(--foreground); }.video-pending { height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 17px; color: var(--muted-foreground); font-size: 12px; }.play-symbol { width: 62px; height: 62px; display: grid; place-items: center; border: 1px solid var(--video-icon); border-radius: 50%; background: var(--background); color: var(--primary); }.play-symbol svg { width: 22px; margin-left: 3px; }.intro-summary { max-width: 650px; font-size: 14px; margin: 23px auto 12px; }.intro-checks { display: flex; gap: 25px; justify-content: center; margin-bottom: 24px; font-size: 11px; font-weight: 650; }.intro-checks span { display: flex; align-items: center; gap: 5px; }.intro-checks svg { width: 15px; color: var(--primary); }.intro>a,.final-cta>a { min-height: 48px; min-width: 290px; font-size: 13px; }.small-note { font-size: 11px; margin-top: 12px; }.section { padding-block: 70px; }.section-heading { margin-bottom: 32px; }.section-heading h2 { font-size: 31px; line-height: 1.3; }.section-heading p { margin-top: 14px; font-size: 14px; }.section-band { background: var(--secondary); border-block: 1px solid var(--border); }
 #edukacija { border-top: 1px solid var(--border); }#edukacija .section-heading,#rezultati .section-heading,#clanstvo .section-heading { text-align: center; }.lesson-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }.lesson-card { display: flex; align-items: flex-start; gap: 18px; padding: 24px; border: 1px solid var(--border); border-radius: 8px; }.lesson-card h3,.feature-card h3 { font-size: 17px; }.lesson-card p { font-size: 13px; margin-top: 5px; }.icon-box { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; background: var(--primary-soft); color: var(--primary); border-radius: 6px; flex-shrink: 0; }.icon-box svg { width: 21px; }
 .example-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px; }.example-card { border: 1px solid var(--border); border-radius: 8px; background: var(--card); padding: 28px; }.reserved-example { position: relative; min-height: 205px; display: flex; flex-direction: column; justify-content: center; align-items: center; border-style: dashed; }.reserved-example>svg { color: var(--muted-foreground); width: 29px; height: 29px; margin-bottom: 18px; }.example-number { position: absolute; left: 20px; top: 15px; font-size: 11px; color: var(--muted-foreground); }.example-card h3 { font-size: 16px; }.example-card p { font-size: 12px; margin-top: 8px; }.risk-note { font-size: 11px; display: flex; align-items: flex-start; gap: 8px; margin-top: 23px; }.risk-note svg { width: 16px; height: 16px; flex-shrink: 0; margin-top: 3px; color: var(--primary); }
 .three-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; }.feature-card { padding: 26px; border: 1px solid var(--border); border-radius: 8px; }.feature-card h3 { margin: 20px 0 10px; }.feature-card p { font-size: 13px; }
@@ -36,17 +36,19 @@
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } *,*::before,*::after { animation: none !important; transition: none !important; } }
 
 .vsl-frame {
+  position: relative;
   width: 100%;
   max-width: 740px;
+  margin: 0 auto;
   aspect-ratio: 16 / 9;
-  height: auto;
-  margin-inline: auto;
   overflow: hidden;
   border-radius: 16px;
   background: #000;
 }
 
 .vsl-frame iframe {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
   height: 100%;
