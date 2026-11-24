@@ -16,7 +16,7 @@ export const evidence: Evidence[] = [
   {
     token: 'BLESS',
     category: 'Analize',
-    title: 'Od analize do tržišnog momentuma',
+    title: 'Primjer profita na investiciju',
     description: 'Primjer Telegram objave i praćenja kretanja cijene BLESS tokena. Objavljeni tržišni pomaci nisu isto što i ostvarena dobit.',
     images: [
       { url: '/trades/slika1.png', label: 'Originalna Telegram objava' },
@@ -26,7 +26,7 @@ export const evidence: Evidence[] = [
   {
     token: 'EVAA',
     category: 'Praćenje tržišta',
-    title: 'Praćenje kretanja cijene EVAA',
+    title: 'Preko 350% na investiciju (u momentu objave)',
     description: 'Primjer mjerenja kretanja cijene na chartu.',
     images: [
       { url: '/trades/slika2.png', label: 'EVAA futures chart – 50x' },
@@ -36,7 +36,7 @@ export const evidence: Evidence[] = [
   {
     token: 'BREVIS',
     category: 'Analize',
-    title: 'Primjer analize BREVIS tokena',
+    title: 'Primjer analize i potencijalne kupovine',
     description: 'Prikaz potencijalnih zona za kupovinu i kretanja cijene. Navedeni potencijal od 100–170% predstavlja projekciju dobiti iz originalne objave.',
     images: [
       { url: '/trades/slika3.png', label: 'BREVIS analiza' },
@@ -46,7 +46,7 @@ export const evidence: Evidence[] = [
   {
     token: 'BLESS',
     category: 'Praćenje tržišta',
-    title: 'Praćenje BLESS tržišnog momentuma',
+    title: 'Pored objave, redovan update cjene i šta se dešava',
     description: 'Prikaz BLESS/USDT valutnog para.',
     images: [
       { url: '/trades/slika4.png', label: 'BLESS futures chart – 50x' },
@@ -56,7 +56,7 @@ export const evidence: Evidence[] = [
   {
     token: 'EVAA',
     category: 'Spot pozicije',
-    title: 'Primjer promjene vrijednosti EVAA pozicije',
+    title: 'Primjer trenutne zarade na investiciju',
     description: 'Trenutni rezultat zarade od 50% na investiciju.',
     images: [
       { url: '/trades/slika5.png', label: 'EVAA prikaz rezultata' },
@@ -64,7 +64,7 @@ export const evidence: Evidence[] = [
     kind: 'portfolio'
   },
   {
-    token: 'SOLV / ARIA',
+    token: 'SOLV token',
     category: 'Analize',
     title: 'Istraživanje projekata i potencijalnih prilika',
     description: 'Primjeri chart analize, tržišne strukture i potencijalnih zona kupovine.',
@@ -78,7 +78,7 @@ export const evidence: Evidence[] = [
   {
     token: 'SOLANA',
     category: 'Spot pozicije',
-    title: 'Dugoročniji spot pristup',
+    title: 'Trenutna zarada na investiciju',
     description: 'Primjer investicije u SOLANU sa zaradom od +25.01% u tom momentu.',
     images: [
       { url: '/trades/slika9.png', label: 'SOL investicija – Pionex' },
@@ -88,7 +88,7 @@ export const evidence: Evidence[] = [
   {
     token: 'H',
     category: 'Spot pozicije',
-    title: 'Primjer dugoročnog ulaganja',
+    title: 'Fantastičan profit na investiciju',
     description: 'Prikaz H tokena sa zaradom od +330.74% na investiciju. Ovo nije garancija budućih rezultata, već samo primjer kakve rezultate smo pravili',
     images: [
       { url: '/trades/slika10.png', label: 'H token – Pionex' },
