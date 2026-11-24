@@ -96,6 +96,6 @@ export const evidence: Evidence[] = [
     ],
     kind: 'portfolio'
   },
-];export const featuredExamples: Evidence[] = [];;
+];export const featuredExamples: Evidence[] = evidence;;;
 
 export const riskDisclaimer = 'Trgovanje i investiranje u kriptovalute nosi visok rizik gubitka kapitala. Sadržaj na ovoj stranici služi isključivo u edukativne i informativne svrhe i ne predstavlja finansijski, investicijski niti vjerski savjet. Historijski rezultati nisu garancija budućih prinosa. Svaki korisnik samostalno donosi odluke i snosi odgovornost za svoje postupke.';
