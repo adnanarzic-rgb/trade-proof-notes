@@ -39,25 +39,23 @@ export function SpotSite() {
         <h1>Nauči kako jednostavno<br className="desktop-break"/> <span className="underlined">ulagati u kriptovalute.</span></h1>
         <p className="intro-subtitle">Pronađi prilike na kripto tržištu.<br className="mobile-break"/> Nauči kada kupiti i kada prodati.</p>
        
-<div className="vsl-frame">
-  {videoUrl ? (
-    <iframe
-      className="vsl-player"
-      src="https://www.youtube.com/embed/8_gaifOh-Cw"
-      title="Halid - Spot trading edukacija"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerPolicy="strict-origin-when-cross-origin"
-      allowFullScreen
-    />
-  ) : (
-    <div className="video-pending">
-      <span className="play-symbol"><Play fill="currentColor"/></span>
-      <span>Uvodni video uskoro</span>
-    </div>
-  )}
-</div>
 
-/> : <div className="video-pending"><span className="play-symbol"><Play fill="currentColor"/></span><span>Pogledaj ukratko kako izgleda proces trgovanja</span></div>}</div>
+<div className="vsl-frame">
+  <iframe
+    className="vsl-player"
+    src="https://www.youtube.com/embed/8_gaifOh-Cw"
+    title="Halid - Spot trading edukacija"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+  />
+</div>
+<p className="video-caption">
+  Pogledaj ukratko kako izgleda proces trgovanja.
+</p>
+
+
+<span className="play-symbol"><Play fill="currentColor"/></span><span>Pogledaj ukratko kako izgleda proces trgovanja</span></div>}</div>
         <p className="intro-summary">Uz praktične video lekcije, analize i primjere trgovanja nauči osnove spot ulaganja — korak po korak.</p>
         <div className="intro-checks"><span><Check/>Bez leveragea</span><span><Check/>Jednostavna objašnjenja</span><span><Check/>Za ljude sa Balkana</span></div>
         <JoinButton/><p className="small-note">Odaberi paket i pridruži se edukaciji i zajednici.</p>
