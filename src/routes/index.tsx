@@ -2,10 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SpotSite } from '@/components/spot-site';
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
-    { title: 'HALID SPOT TRADING | Kripto analize i Spot VIP zajednica' },
-    { name: 'description', content: 'Spot analize, altcoin istraživanje i kripto edukacija sa Halidom Arzićem. Bez leveragea i futuresa. Spot VIP Club: $59 za 3 mjeseca.' },
-    { property: 'og:title', content: 'HALID SPOT TRADING — Kripto tržište bez leveragea' },
-    { property: 'og:description', content: 'Istraživanje prije odluke. Spot analize, edukacija i odgovoran pristup kripto tržištu za zajednicu sa Balkana.' },
+    { title: 'HALID SPOT TRADING | Nauči jednostavno ulagati u kriptovalute' },
+    { name: 'description', content: 'Nauči osnove kripta, kako prepoznati priliku za kupovinu i odgovorno čuvati kapital. Edukacija sa Halidom Arzićem za početnike sa Balkana. Paketi od $59.' },
+    { property: 'og:title', content: 'HALID SPOT TRADING — Nauči jednostavno ulagati u kriptovalute' },
+    { property: 'og:description', content: 'Jednostavna objašnjenja, praktični primjeri i spot analize. Korak po korak, bez leveragea i obećanja o brzoj zaradi.' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
   ] }),

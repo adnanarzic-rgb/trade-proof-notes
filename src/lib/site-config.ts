@@ -1,6 +1,16 @@
-export const membership = { priceUsd: 59, durationMonths: 3, destination: '' };
-export const socialLinks = { youtube: '', instagram: '', telegram: '' };
-export const portraitUrl = '';
+import portraitAsset from '@/assets/halid-arzic-portrait.png.asset.json';
+
+export const membership = { priceUsd: 59, durationMonths: 3, destination: 'https://whop.com/checkout/plan_UC2VDuvqRdpL6' };
+export const packages = [
+  { name: 'STANDARD', priceUsd: 59, durationMonths: membership.durationMonths, destination: membership.destination, features: ['Edukacija o spot trgovanju', 'Signali i analize'], featured: false },
+  { name: 'PREMIUM', priceUsd: 120, durationMonths: 6, destination: 'https://whop.com/checkout/plan_DatQoCJ6zz7B0', features: ['Edukacija o spot trgovanju', 'Signali i analize', 'Detaljna objašnjenja', 'Prioritetna komunikacija', 'BONUS: Ekskluzivne analize'], featured: true },
+  { name: 'VIP', priceUsd: 200, durationMonths: 12, destination: 'https://whop.com/checkout/plan_z5YjBZk72W3Nu', features: ['Sve iz Standard i Premium paketa', 'Konsultacije sa mnom 1 na 1', 'BONUS: VIP grupa', 'BONUS: Dodatni spot signali'], featured: false },
+];
+export const socialLinks = { youtube: '', instagram: '', telegram: 'https://t.me/+usoj-qtkLU81MmQ0' };
+export const portraitUrl = portraitAsset.url;
+// Set a supplied video URL and add original evidence here when the owner provides them.
+export const videoUrl = '';
+export const featuredExamples: Evidence[] = [];
 export type Evidence = { token: string; category: 'Analize' | 'Praćenje tržišta' | 'Spot pozicije'; title: string; description: string; images: { url: string; label: string }[]; kind: 'research' | 'portfolio' | 'market'; };
 export const evidence: Evidence[] = [
   { token: 'BLESS', category: 'Analize', title: 'Od analize do tržišnog momentuma', description: 'Početna analiza i kasnije kretanje cijene, prikazani zajedno. Historijski pomak tržišta nije isto što i ostvarena dobit.', images: [], kind: 'market' },

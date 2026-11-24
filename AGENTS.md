@@ -34,3 +34,4 @@ use the editor.
 - Store membership, social destinations and owner evidence in a browser-safe configuration module; missing destinations must not redirect to invented services.
 - Keep all presentation tokens and reusable section styling in `src/styles.css`; components use semantic classes.
 - Evidence entries distinguish source availability and performance type; never render unsupplied screenshot claims as verified results.
+- Configure the video source, reserved featured examples and external checkout packages in the browser-safe site configuration; this keeps owner-provided content replaceable without simulated uploads or payment processing.
