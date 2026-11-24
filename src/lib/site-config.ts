@@ -10,9 +10,9 @@ export const socialLinks = { youtube: '', instagram: '', telegram: 'https://t.me
 export const portraitUrl = portraitAsset.url;
 // Set a supplied video URL and add original evidence here when the owner provides them.
 export const videoUrl = '';
-export const featuredExamples: Evidence[] = evidence;
+
 export type Evidence = { token: string; category: 'Analize' | 'Praćenje tržišta' | 'Spot pozicije'; title: string; description: string; images: { url: string; label: string }[]; kind: 'research' | 'portfolio' | 'market'; };
-export const evidence: Evidence[] = [
+
 export const evidence: Evidence[] = [
   {
     token: 'BLESS',
@@ -96,6 +96,6 @@ export const evidence: Evidence[] = [
     ],
     kind: 'portfolio'
   },
-];
+];export const featuredExamples: Evidence[] = evidence;
 
 export const riskDisclaimer = 'Trgovanje i investiranje u kriptovalute nosi visok rizik gubitka kapitala. Sadržaj na ovoj stranici služi isključivo u edukativne i informativne svrhe i ne predstavlja finansijski, investicijski niti vjerski savjet. Historijski rezultati nisu garancija budućih prinosa. Svaki korisnik samostalno donosi odluke i snosi odgovornost za svoje postupke.';
