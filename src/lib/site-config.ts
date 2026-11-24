@@ -13,13 +13,89 @@ export const videoUrl = '';
 export const featuredExamples: Evidence[] = [];
 export type Evidence = { token: string; category: 'Analize' | 'Praćenje tržišta' | 'Spot pozicije'; title: string; description: string; images: { url: string; label: string }[]; kind: 'research' | 'portfolio' | 'market'; };
 export const evidence: Evidence[] = [
-  { token: 'BLESS', category: 'Analize', title: 'Od analize do tržišnog momentuma', description: 'Početna analiza i kasnije kretanje cijene, prikazani zajedno. Historijski pomak tržišta nije isto što i ostvarena dobit.', images: [], kind: 'market' },
-  { token: 'EVAA', category: 'Praćenje tržišta', title: 'Praćenje snažnog pomaka cijene', description: 'Originalni chart sa mjerenjem kretanja cijene u označenom periodu. Mjerenje na chartu ne predstavlja potvrdu prinosa pozicije.', images: [], kind: 'market' },
-  { token: 'BREVIS', category: 'Analize', title: 'Primjer strukturirane spot analize', description: 'Zone kupovine, ciljevi i ključni nivoi. Potencijal od 100–170% iz originalne poruke je projekcija, a ne već ostvareni rezultat.', images: [], kind: 'research' },
-  { token: 'BLESS', category: 'Praćenje tržišta', title: 'Analiza ne završava nakon objave', description: 'Praćenje momentuma, volumena, promjena cijene i ključnih zona kroz redovne tržišne updateove.', images: [], kind: 'research' },
-  { token: 'EVAA', category: 'Spot pozicije', title: 'Primjer prikaza spot pozicije', description: 'Originalni MEXC prikaz portfolija. Prikazana promjena vrijednosti ne mora predstavljati realizovanu dobit niti nezavisno potvrđenu transakciju.', images: [], kind: 'portfolio' },
-  { token: 'SOLV / ARIA', category: 'Analize', title: 'Altcoin istraživanje i tržišna struktura', description: 'Primjeri istraživanja projekata i potencijalnih zona kupovine, ne dokaz završenih spot prinosa.', images: [], kind: 'research' },
-  { token: 'SOLANA', category: 'Spot pozicije', title: 'Dugoročniji spot pristup', description: 'Originalni Pionex prikaz SOL investicije. Promjena vrijednosti otvorene pozicije nije isto što i realizovan profit.', images: [], kind: 'portfolio' },
-  { token: 'H', category: 'Spot pozicije', title: 'Prikaz promjene vrijednosti investicije', description: 'Originalni Pionex prikaz H tokena. Historijska vrijednost portfolija ne garantuje buduće prinose.', images: [], kind: 'portfolio' },
+export const evidence: Evidence[] = [
+  {
+    token: 'BLESS',
+    category: 'Analize',
+    title: 'Od analize do tržišnog momentuma',
+    description: 'Primjer Telegram objave i praćenja kretanja cijene BLESS tokena. Objavljeni tržišni pomaci nisu isto što i ostvarena dobit.',
+    images: [
+      { url: '/trades/slika1.png', label: 'Originalna Telegram objava' },
+    ],
+    kind: 'market'
+  },
+  {
+    token: 'EVAA',
+    category: 'Praćenje tržišta',
+    title: 'Praćenje kretanja cijene EVAA',
+    description: 'Primjer mjerenja kretanja cijene na chartu. Prikaz je Perp 50x, odnosno futures, a ne spot pozicija.',
+    images: [
+      { url: '/trades/slika2.png', label: 'EVAA futures chart – 50x' },
+    ],
+    kind: 'market'
+  },
+  {
+    token: 'BREVIS',
+    category: 'Analize',
+    title: 'Primjer analize BREVIS tokena',
+    description: 'Prikaz potencijalnih zona kupovine i kretanja cijene. Navedeni potencijal od 100–170% predstavlja projekciju iz originalne objave, ne ostvareni profit.',
+    images: [
+      { url: '/trades/slika3.png', label: 'BREVIS analiza' },
+    ],
+    kind: 'research'
+  },
+  {
+    token: 'BLESS',
+    category: 'Praćenje tržišta',
+    title: 'Praćenje BLESS tržišnog momentuma',
+    description: 'Prikaz BLESS/USDT Perp 50x pozicije. Ovo je futures primjer, a ne spot trgovanje.',
+    images: [
+      { url: '/trades/slika4.png', label: 'BLESS futures chart – 50x' },
+    ],
+    kind: 'market'
+  },
+  {
+    token: 'EVAA',
+    category: 'Spot pozicije',
+    title: 'Primjer promjene vrijednosti EVAA pozicije',
+    description: 'Originalni MEXC prikaz sa iskazanom promjenom od +50.92%. Prikazani procenat nije nezavisno potvrđena realizovana dobit.',
+    images: [
+      { url: '/trades/slika5.png', label: 'EVAA prikaz rezultata' },
+    ],
+    kind: 'portfolio'
+  },
+  {
+    token: 'SOLV / ARIA',
+    category: 'Analize',
+    title: 'Istraživanje projekata i potencijalnih prilika',
+    description: 'Primjeri chart analize, tržišne strukture i potencijalnih zona kupovine.',
+    images: [
+      { url: '/trades/slika6.png', label: 'SOLV analiza' },
+      { url: '/trades/slika7.png', label: 'ARIA analiza' },
+      { url: '/trades/slika8.png', label: 'EVAA analiza' },
+    ],
+    kind: 'research'
+  },
+  {
+    token: 'SOLANA',
+    category: 'Spot pozicije',
+    title: 'Dugoročniji spot pristup',
+    description: 'Originalni Pionex prikaz SOL investicije sa iskazanom promjenom vrijednosti od +25.01%.',
+    images: [
+      { url: '/trades/slika9.png', label: 'SOL investicija – Pionex' },
+    ],
+    kind: 'portfolio'
+  },
+  {
+    token: 'H',
+    category: 'Spot pozicije',
+    title: 'Primjer dugoročnog ulaganja',
+    description: 'Originalni Pionex prikaz H tokena sa iskazanom promjenom vrijednosti od +330.74%. Ovo nije garancija budućih rezultata.',
+    images: [
+      { url: '/trades/slika10.png', label: 'H token – Pionex' },
+    ],
+    kind: 'portfolio'
+  },
 ];
+
 export const riskDisclaimer = 'Trgovanje i investiranje u kriptovalute nosi visok rizik gubitka kapitala. Sadržaj na ovoj stranici služi isključivo u edukativne i informativne svrhe i ne predstavlja finansijski, investicijski niti vjerski savjet. Historijski rezultati nisu garancija budućih prinosa. Svaki korisnik samostalno donosi odluke i snosi odgovornost za svoje postupke.';
