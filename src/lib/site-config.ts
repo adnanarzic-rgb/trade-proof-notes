@@ -28,7 +28,7 @@ export const evidence: Evidence[] = [
     token: 'EVAA',
     category: 'Praćenje tržišta',
     title: 'Praćenje kretanja cijene EVAA',
-    description: 'Primjer mjerenja kretanja cijene na chartu. Prikaz je Perp 50x, odnosno futures, a ne spot pozicija.',
+    description: 'Primjer mjerenja kretanja cijene na chartu.',
     images: [
       { url: '/trades/slika2.png', label: 'EVAA futures chart – 50x' },
     ],
@@ -38,7 +38,7 @@ export const evidence: Evidence[] = [
     token: 'BREVIS',
     category: 'Analize',
     title: 'Primjer analize BREVIS tokena',
-    description: 'Prikaz potencijalnih zona kupovine i kretanja cijene. Navedeni potencijal od 100–170% predstavlja projekciju iz originalne objave, ne ostvareni profit.',
+    description: 'Prikaz potencijalnih zona za kupovinu i kretanja cijene. Navedeni potencijal od 100–170% predstavlja projekciju dobiti iz originalne objave.',
     images: [
       { url: '/trades/slika3.png', label: 'BREVIS analiza' },
     ],
@@ -48,7 +48,7 @@ export const evidence: Evidence[] = [
     token: 'BLESS',
     category: 'Praćenje tržišta',
     title: 'Praćenje BLESS tržišnog momentuma',
-    description: 'Prikaz BLESS/USDT Perp 50x pozicije. Ovo je futures primjer, a ne spot trgovanje.',
+    description: 'Prikaz BLESS/USDT valutnog para.',
     images: [
       { url: '/trades/slika4.png', label: 'BLESS futures chart – 50x' },
     ],
@@ -58,7 +58,7 @@ export const evidence: Evidence[] = [
     token: 'EVAA',
     category: 'Spot pozicije',
     title: 'Primjer promjene vrijednosti EVAA pozicije',
-    description: 'Originalni MEXC prikaz sa iskazanom promjenom od +50.92%. Prikazani procenat nije nezavisno potvrđena realizovana dobit.',
+    description: 'Trenutni rezultat zarade od 50% na investiciju.',
     images: [
       { url: '/trades/slika5.png', label: 'EVAA prikaz rezultata' },
     ],
@@ -80,7 +80,7 @@ export const evidence: Evidence[] = [
     token: 'SOLANA',
     category: 'Spot pozicije',
     title: 'Dugoročniji spot pristup',
-    description: 'Originalni Pionex prikaz SOL investicije sa iskazanom promjenom vrijednosti od +25.01%.',
+    description: 'Primjer investicije u SOLANU sa zaradom od +25.01% u tom momentu.',
     images: [
       { url: '/trades/slika9.png', label: 'SOL investicija – Pionex' },
     ],
@@ -90,7 +90,7 @@ export const evidence: Evidence[] = [
     token: 'H',
     category: 'Spot pozicije',
     title: 'Primjer dugoročnog ulaganja',
-    description: 'Originalni Pionex prikaz H tokena sa iskazanom promjenom vrijednosti od +330.74%. Ovo nije garancija budućih rezultata.',
+    description: 'Prikaz H tokena sa zaradom od +330.74% na investiciju. Ovo nije garancija budućih rezultata, već samo primjer kakve rezultate smo pravili',
     images: [
       { url: '/trades/slika10.png', label: 'H token – Pionex' },
     ],
