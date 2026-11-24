@@ -9,8 +9,7 @@ export const packages = [
 export const socialLinks = { youtube: '', instagram: '', telegram: 'https://t.me/+usoj-qtkLU81MmQ0' };
 export const portraitUrl = '/images/slika11.png';
 // Set a supplied video URL and add original evidence here when the owner provides them.
-export const videoUrl = 'https://www.youtube.com/8_gaifOh-Cw?si=DK6q4AtXtFH5uczK';
-export type Evidence = { token: string; category: 'Analize' | 'Praćenje tržišta' | 'Spot pozicije'; title: string; description: string; images: { url: string; label: string }[]; kind: 'research' | 'portfolio' | 'market'; };
+export const videoUrl = 'https://www.youtube.com/embed/8_gaifOh-Cw';export type Evidence = { token: string; category: 'Analize' | 'Praćenje tržišta' | 'Spot pozicije'; title: string; description: string; images: { url: string; label: string }[]; kind: 'research' | 'portfolio' | 'market'; };
 
 export const evidence: Evidence[] = [
   {
