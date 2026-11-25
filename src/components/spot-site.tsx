@@ -7,11 +7,11 @@ import { membership, packages, portraitUrl, riskDisclaimer, socialLinks, feature
 
 const nav = [['Šta dobijaš', 'edukacija'], ['Primjeri', 'rezultati'], ['O meni', 'o-meni'], ['Paketi', 'clanstvo'], ['Pitanja', 'faq']];
 const lessons = [
-  [BookOpen, 'Osnove kripta', 'Nauči kako funkcionišu kriptovalute.'],
-  [TrendingUp, 'Kada kupiti?', 'Kako prepoznati potencijalnu priliku.'],
-  [Wallet, 'Kada prodati?', 'Kako planirati prodaju i uzimanje profita.'],
-  [ShieldCheck, 'Čuvanje kapitala', 'Kako izbjeći česte početničke greške.'],
-  [Target, 'Praktični primjeri', 'Pogledaj kako izgledaju konkretne kupovine i prodaje.'],
+  [TrendingUp, 'Kada kupiti valutu', 'Uz pomoć analize znaćeš kad je momenat da je kupiš.'],
+  [Wallet, 'Kada prodati i uzeti profit', 'Znaćeš kad je pravi momenat da prodaš i uzmeš zaradu.'],
+  [BookOpen, 'Osnove kripta', 'Objašnjenja bez teških riječi, od samog početka.'],
+  [ShieldCheck, 'Kako čuvati novac', 'Kako ne napraviš greške koje početnici najčešće naprave.'],
+  [Target, 'Konkretni primjeri', 'Vidiš kako izgledaju konkretne kupovine i prodaje.'],
   [GraduationCap, 'Video edukacija', 'Uči vlastitim tempom, korak po korak.'],
 ] as const;
 const faqs = [
@@ -26,7 +26,7 @@ const faqs = [
 ];
 function Brand() { return <a href="#pocetna" className="brand" aria-label="Halid Spot Trading — početna"><ChartNoAxesCombined/><span>HALID <span>SPOT TRADING</span></span></a>; }
 function SectionTitle({ label, title, text }: { label?: string; title: string; text?: string }) { return <div className="section-heading">{label && <span className="eyebrow">{label}</span>}<h2>{title}</h2>{text && <p>{text}</p>}</div>; }
-function JoinButton({ label = 'Želim naučiti spot trgovanje' }: { label?: string }) { return <Button size="lg" asChild><a href="#clanstvo">{label}<ArrowRight/></a></Button>; }
+function JoinButton({ label = 'ŽELIM PRISTUPITI VIP GRUPI' }: { label?: string }) { return <Button size="lg" asChild><a href="#clanstvo">{label}<ArrowRight/></a></Button>; }
 
 export function SpotSite() {
   const [mobile, setMobile] = useState(false);
@@ -36,14 +36,14 @@ export function SpotSite() {
     <main>
       <section id="pocetna" className="intro container">
         <span className="eyebrow">HALID SPOT TRADING · EDUKACIJA ZA POČETNIKE</span>
-        <h1>Nauči kako jednostavno<br className="desktop-break"/> <span className="underlined">ulagati u kriptovalute.</span></h1>
-        <p className="intro-subtitle">Pronađi prilike na kripto tržištu.<br className="mobile-break"/> Nauči kada kupiti i kada prodati.</p>
+        <h1>Nauči kako<br className="desktop-break"/> <span className="underlined">Zaraditi Trgovanjem Kriptovaluta.</span></h1>
+        <p className="intro-subtitle">Dam ti edukaciju i valute —<br className="mobile-break"/> ti biraš kad kupiti i kad prodati i uzeti profit.</p>
        
 
 <div className="vsl-frame">
   <iframe
     className="vsl-player"
-    src="https://www.youtube.com/embed/8_gaifOh-Cw"
+    src={videoUrl}
     title="Halid - Spot trading edukacija"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerPolicy="strict-origin-when-cross-origin"
@@ -56,10 +56,10 @@ export function SpotSite() {
 
 
         
-        <div className="intro-checks"><span><Check/>Bez leveragea</span><span><Check/>Jednostavna objašnjenja</span><span><Check/>Za ljude sa Balkana</span></div>
+        <div className="intro-checks"><span><Check/>Sve preko telefona</span><span><Check/>Jednostavna objašnjenja</span><span><Check/>Za ljude sa Balkana</span></div>
         <JoinButton/><p className="small-note">Odaberi paket i pridruži se edukaciji i zajednici.</p>
       </section>
-      <section id="edukacija" className="section container"><SectionTitle label="OD OSNOVA DO PRVIH KORAKA" title="Šta ćeš naučiti?"/><div className="lesson-grid">{lessons.map(([Icon, title, text]) => <article className="lesson-card" key={title}><span className="icon-box"><Icon/></span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div></section>
+      <section id="edukacija" className="section container"><SectionTitle label="TELEGRAM ZAJEDNICA" title="Šta dobijaš u mojoj PRIVATNOJ Telegram zajednici"/><div className="lesson-grid">{lessons.map(([Icon, title, text]) => <article className="lesson-card" key={title}><span className="icon-box"><Icon/></span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div></section>
       <section id="rezultati" className="section-band"><div className="section container"><SectionTitle label="KONKRETNI PRIMJERI" title="Kako izgleda trgovanje u praksi?" text="Primjeri kupovine, prodaje i praćenja kriptovaluta na jednom mjestu."/>
 
 
@@ -74,7 +74,7 @@ export function SpotSite() {
       <section className="section-band"><div className="section container principles-grid"><div><SectionTitle label="PRINCIPI NA PRVOM MJESTU" title="Trgovanje uz principe i odgovornost."/><p>Želimo graditi zajednicu koja pristupa kripto tržištu odgovorno i sa jasnim principima. Naš model fokusiran je na spot trgovanje, bez futures pozicija, leveragea i short trgovanja.</p></div><div><ul className="principles-list">{['Bez leveragea', 'Bez futures signala', 'Bez short pozicija', 'Fokus na kupovini i vlasništvu nad imovinom', 'Istraživanje projekata prije donošenja odluka', 'Transparentnost u prikazivanju rezultata'].map(t => <li key={t}><Check/>{t}</li>)}</ul><p className="small-note religious-note">Ne tvrdimo da su svi tokeni ili strategije halal niti da smo šerijatski certificirani. Pojedinačni projekti i strukture transakcija zahtijevaju zasebnu šerijatsku procjenu kvalificiranih učenjaka.</p></div></div></section>
       <section id="clanstvo" className="section container"><SectionTitle label="TVOJ SLJEDEĆI KORAK" title="Odaberi svoj paket." text="Jednostavna edukacija i konkretne analize. Odaberi pristup koji ti odgovara."/><div className="pricing-grid">{packages.map((plan, i) => { const Icon = i === 0 ? Zap : i === 1 ? Crown : Star; return <article className={`pricing-card ${plan.featured ? 'featured-plan' : ''}`} key={plan.name}>{plan.featured && <span className="plan-badge">PREPORUČENI PAKET</span>}<Icon className="plan-icon"/><h3>{plan.name}</h3><p>{plan.durationMonths} {plan.durationMonths === 3 ? 'mjeseca' : 'mjeseci'} pristupa</p><div className="price">${plan.priceUsd}<span>USD</span></div><ul>{plan.features.map(feature => <li key={feature}><Check/><span>{feature}</span></li>)}</ul><Button size="lg" variant={plan.featured ? 'default' : 'outline'} asChild><a href={plan.destination} target="_blank" rel="noopener noreferrer">Odaberi {plan.name.toLowerCase()}<ArrowUpRight/></a></Button><p className="payment-note"><ShieldCheck/>Sigurno plaćanje preko kartice</p><span className="payment-provider"><CreditCard/>Plaćanje preko Whopa</span></article>; })}</div><p className="pricing-disclaimer">Članstvo ne garantuje profit. Svaka odluka o kupovini i prodaji ostaje tvoja odgovornost.</p></section>
       <section id="faq" className="section-band"><div className="section container faq-grid"><SectionTitle label="DOBRO JE ZNATI" title="Pitanja prije prvog koraka." text="Jasni odgovori. Bez velikih obećanja."/><Accordion type="single" collapsible>{faqs.map(([q, a], i) => <AccordionItem value={`faq-${i}`} key={q}><AccordionTrigger className="faq-trigger">{q}</AccordionTrigger><AccordionContent className="faq-answer">{a}</AccordionContent></AccordionItem>)}</Accordion></div></section>
-      <section className="final-cta container"><h2>Spreman za svoj prvi korak?</h2><p>Nauči osnove kripta uz jednostavna objašnjenja i podršku zajednice.</p><JoinButton label="Odaberi paket i pridruži se"/></section>
+      <section className="final-cta container"><h2>Spreman za svoj prvi korak?</h2><p>Nauči osnove kripta uz jednostavna objašnjenja i podršku zajednice.</p><JoinButton label="ŽELIM PRISTUPITI VIP GRUPI"/></section>
     </main>
     <footer><div className="container footer-top"><Brand/><nav className="footer-nav" aria-label="Navigacija u podnožju">{nav.map(([label, id]) => <a key={id} href={`#${id}`}>{label}</a>)}</nav><Button variant="outline" asChild><a href={socialLinks.telegram} target="_blank" rel="noopener noreferrer"><Send/>Telegram<ArrowUpRight/></a></Button></div><div className="container footer-risk"><span>VAŽNO UPOZORENJE O RIZIKU</span><p>{riskDisclaimer}</p></div><div className="container footer-bottom">© 2026 HALID SPOT TRADING. Sva prava zadržana.</div></footer>
     <Dialog open={Boolean(preview)} onOpenChange={open => { if (!open) setPreview(null); }}><DialogContent className="gallery-modal"><DialogTitle>{preview?.token} — {preview?.title}</DialogTitle><DialogDescription>{preview?.description}</DialogDescription><div className="preview-images">{preview?.images.map(image => <figure key={image.url}><img src={image.url} alt={image.label}/><figcaption>{image.label}</figcaption></figure>)}</div></DialogContent></Dialog>
